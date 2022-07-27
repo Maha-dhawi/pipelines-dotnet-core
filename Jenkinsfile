@@ -8,9 +8,9 @@ pipeline {
 
         AWS_S3_BUCKET = "artifact-dotnet-dll-filesm"
         ARTIFACT_NAME = "pipelines-dotnet-core.dll"
-        AWS_EB_APP_NAME = "sample-dotnet-app"
+        AWS_EB_APP_NAME = "dotnet-pro"
         AWS_EB_APP_VERSION = "${BUILD_ID}"
-        AWS_EB_ENVIRONMENT = "Sampledotnetapp-env"
+        AWS_EB_ENVIRONMENT = "Dotnetpro-env"
 
         SONAR_IP = "54.226.50.200"
         SONAR_TOKEN = "sqp_4f4904db430aba9948fce759bbf9777998547c44"
