@@ -1,7 +1,7 @@
 pipeline {
     agent any
 
-    /* environment {
+     environment {
 
         AWS_ACCESS_KEY_ID     = credentials('jenkins-aws-secret-key-id')
         AWS_SECRET_ACCESS_KEY = credentials('jenkins-aws-secret-access-key')
@@ -15,7 +15,7 @@ pipeline {
         SONAR_IP = "54.226.50.200"
         SONAR_TOKEN = "sqp_4f4904db430aba9948fce759bbf9777998547c44"
 
-    } */
+    } 
 
    
     stages {
@@ -59,11 +59,11 @@ pipeline {
                 }
             }
         }
-        /*
+        
         stage('Publish artefacts to S3 Bucket') {
             steps {
 
-                sh "aws configure set region us-east-1"
+                sh "aws configure set region us-west-2"
 
                 sh "aws s3 cp ./bin/Debug/net6.0/pipelines-dotnet-core.dll s3://$AWS_S3_BUCKET/$ARTIFACT_NAME"
                 
@@ -80,6 +80,6 @@ pipeline {
                 
             }
         }
-        */
+        
     }
 }
