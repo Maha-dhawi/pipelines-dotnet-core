@@ -1,7 +1,7 @@
 pipeline {
     agent any
 
-     environment {
+    /* environment {
 
         AWS_ACCESS_KEY_ID     = credentials('jenkins-aws-secret-key-id')
         AWS_SECRET_ACCESS_KEY = credentials('jenkins-aws-secret-access-key')
@@ -15,7 +15,7 @@ pipeline {
         SONAR_IP = "54.226.50.200"
         SONAR_TOKEN = "sqp_4f4904db430aba9948fce759bbf9777998547c44"
 
-    }
+    } */
 
    
     stages {
@@ -59,7 +59,7 @@ pipeline {
                 }
             }
         }
-
+        /*
         stage('Publish artefacts to S3 Bucket') {
             steps {
 
@@ -80,6 +80,6 @@ pipeline {
                 
             }
         }
-        
+        */
     }
 }
